@@ -1,0 +1,161 @@
+
+:root {
+
+    --black: #0B132B;
+    --text: #C6C6C6;
+    --yellow: #ffbc42;
+    --highlight: #FF0F00;
+    }
+
+body {
+    background-color: #0B132B;
+    width: 90%;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 80%;
+    margin: 10px auto;
+}
+
+/* .logo {
+    font-size: 25px;
+    color: var(--text)
+} */
+
+.logo {
+
+    width:100px;
+    height:80px;
+}
+
+.navbar {
+    width: 60%;
+    margin: 0 auto;
+
+
+}
+
+ul {
+    text-decoration: none;
+    background-color: #ffbc42;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+ul li {
+    text-decoration: none;
+    list-style: none;
+    padding: 8px 20px;
+
+}
+
+ul li a {
+    text-decoration: none;
+    color: var(--black);
+    font-size: 15px;
+    font-weight: 15px;
+    cursor: pointer;
+}
+
+.banner-section {
+    width: 80%;
+    margin: 0 auto;
+    height: 500px;
+    border: 1px solid #FF0F00;
+
+}
+.myself-section{
+    width: 80%;
+    margin: 0 auto;
+    height: 450px;
+    border: 1px solid #FF0F00;  
+}
+.mywork-section{
+    width: 80%;
+    margin: 0 auto;
+    height: 450px;
+    border: 1px solid #FF0F00;  
+
+}
+.banner {
+    display: flex;
+    justify-content: center;
+    font-size: 26px;
+
+
+}
+
+.banner-title {
+    position: relative;
+    margin-left: 90px;
+    color: var(--text);
+    text-align: center;
+    margin-top: 170px;
+
+
+}
+
+.special-letter {
+    position: absolute;
+    color: var(--highlight);
+    margin: 2px 3px;
+    z-index: -1;
+    text-shadow: #e7e7e7;
+}
+
+.sub-title {
+    color: var(--text);
+    font-size: 20px;
+    transform: rotate(-15deg);
+    width: 150px;
+}
+.myself
+{
+display: flex;
+align-items: center;
+justify-content: center;
+
+}
+.myself-image{
+    height:250px;
+    width: 250px;
+    border-radius: 30px;
+    padding: 20px;
+    box-shadow: outset 10px 10px 10px  #c4b4b4  
+
+}
+p{
+    font-size: 10px;
+    color: var(--text);
+    line-height: 2.0;
+    width:100%;
+    
+}
+.mywork-section{
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+
+}
+.mywork-figure{
+    
+}
+.mywork-figure1{
+     
+    height:250px;
+    width: 250px;
+    border-radius: 30px;
+    padding: 20px;
+    
+}
+.mywork-figure2{
+    
+   
+}
