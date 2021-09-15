@@ -1,15 +1,14 @@
-
 :root {
 
     --black: #0B132B;
     --text: #C6C6C6;
     --yellow: #ffbc42;
     --highlight: #FF0F00;
-    }
+}
 
 body {
     background-color: #0B132B;
-    width: 90%;
+    width: 80%;
     font-family: 'Open Sans', sans-serif;
     margin: 0 auto;
 }
@@ -22,16 +21,16 @@ header {
     margin: 10px auto;
 }
 
-/* .logo {
+.logo {
     font-size: 25px;
     color: var(--text)
-} */
-
-.logo {
-
-    width:100px;
-    height:80px;
 }
+
+/* .logo {
+
+    width: 100px;
+    height: 80px;
+} */
 
 .navbar {
     width: 60%;
@@ -40,7 +39,7 @@ header {
 
 }
 
-ul {
+nav ul {
     text-decoration: none;
     background-color: #ffbc42;
     display: flex;
@@ -49,14 +48,16 @@ ul {
     border-radius: 10px;
 }
 
-ul li {
+
+li {
     text-decoration: none;
     list-style: none;
     padding: 8px 20px;
+    display: inline;
 
 }
 
-ul li a {
+nav ul li a {
     text-decoration: none;
     color: var(--black);
     font-size: 15px;
@@ -65,31 +66,38 @@ ul li a {
 }
 
 .banner-section {
-    width: 80%;
+    /* width: 80%; */
     margin: 0 auto;
     height: 500px;
     border: 1px solid #FF0F00;
 
 }
-.myself-section{
-    width: 80%;
-    margin: 0 auto;
-    height: 450px;
-    border: 1px solid #FF0F00;  
-}
-.mywork-section{
-    width: 80%;
-    margin: 0 auto;
-    height: 450px;
-    border: 1px solid #FF0F00;  
 
+.myself-section {
+    /* width: 80%; */
+    margin: 0 auto;
+    height: 450px;
+    border: 1px solid #FF0F00;
 }
+
+.mywork-section {
+    /* width: 80%; */
+    margin: 0 auto;
+    height: 900px;
+    border: 1px solid #FF0F00;
+}
+
+.reach-me-section {
+    /* width: 80%; */
+    margin: 0 auto;
+    height: 400px;
+    border: 1px solid #FF0F00;
+}
+
 .banner {
     display: flex;
     justify-content: center;
     font-size: 26px;
-
-
 }
 
 .banner-title {
@@ -98,8 +106,6 @@ ul li a {
     color: var(--text);
     text-align: center;
     margin-top: 170px;
-
-
 }
 
 .special-letter {
@@ -116,46 +122,103 @@ ul li a {
     transform: rotate(-15deg);
     width: 150px;
 }
-.myself
-{
-display: flex;
-align-items: center;
-justify-content: center;
+
+figure.myself {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 40px;
+}
+
+.myself-image {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 200px;
+    width: 200px;
+    border-radius: 10px;
+    margin-left: 25px;
 
 }
-.myself-image{
-    height:250px;
-    width: 250px;
-    border-radius: 30px;
-    padding: 20px;
-    box-shadow: outset 10px 10px 10px  #c4b4b4  
 
-}
-p{
-    font-size: 10px;
+p {
+    font-size: 12px;
     color: var(--text);
     line-height: 2.0;
-    width:100%;
-    
+    width: 80%;
+    margin-left: 100px;
 }
-.mywork-section{
+
+.mywork-figure {
     display: flex;
-    flex-direction:row;
+    flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 40px;
+}
+
+.mywork-figure1 {
+
+    height: 300px;
+    width: 400px;
+    border-radius: 5px;
+    margin: 25px;
+}
+
+form {
+
+    margin: 0 auto;
+    width: 600px;
+    padding: 30px;
+    border-radius: 20px;
+    background-color: #ffbc42;
+}
+
+form ul {
+    text-decoration: none;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 10px;
 
 }
-.mywork-figure{
-    
+
+label {
+    display: inline-block;
+    width: 100px;
 }
-.mywork-figure1{
-     
-    height:250px;
-    width: 250px;
-    border-radius: 30px;
-    padding: 20px;
-    
+
+input,
+textarea {
+    box-sizing: border-box;
+    width: 400px;
+    height: 35px;
+    border: 1px solid var(--text);
+    border-radius: 5px;
 }
-.mywork-figure2{
-    
-   
+
+textarea {
+    vertical-align: top;
+    height: 60px;
+}
+ 
+button {
+
+    height: 40px;
+    width: 220px;
+    background-color: var(--black);
+    color: var(--text);
+    border-radius: 5px;
+    margin: 10px;
+  }
+.formbutton
+{
+    text-align: center;
+  }
+  
+footer{
+
 }
