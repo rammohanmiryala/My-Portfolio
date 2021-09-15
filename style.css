@@ -8,8 +8,11 @@
 
 body {
     background-color: #0B132B;
-    width: 80%;
     font-family: 'Open Sans', sans-serif;
+}
+
+main {
+    width: 80%;
     margin: 0 auto;
 }
 
@@ -19,40 +22,40 @@ header {
     align-items: center;
     width: 80%;
     margin: 10px auto;
+
 }
 
-.logo {
+/* navigation bar  */
+#logo {
     font-size: 25px;
-    color: var(--text)
+    color: var(--text);
+    font-family: 'Kaushan Script', cursive;
+    border-bottom: 1px solid
 }
-
-/* .logo {
-
-    width: 100px;
-    height: 80px;
-} */
 
 .navbar {
     width: 60%;
     margin: 0 auto;
-
-
 }
 
-nav ul {
-    text-decoration: none;
+nav {
     background-color: #ffbc42;
+    margin: 0 auto;
     display: flex;
     flex-direction: row;
     justify-content: center;
     border-radius: 10px;
 }
 
+nav ul {
+    text-decoration: none;
+
+}
 
 li {
     text-decoration: none;
     list-style: none;
-    padding: 8px 20px;
+    padding: 15px 20px;
     display: inline;
 
 }
@@ -60,52 +63,52 @@ li {
 nav ul li a {
     text-decoration: none;
     color: var(--black);
-    font-size: 15px;
-    font-weight: 15px;
+    font-size: 20px;
+    font-weight: bold;
     cursor: pointer;
 }
 
+/* ----------------sections start---------------------- */
+
 .banner-section {
-    /* width: 80%; */
     margin: 0 auto;
-    height: 500px;
+    padding: 40px;
     border: 1px solid #FF0F00;
 
 }
 
 .myself-section {
-    /* width: 80%; */
     margin: 0 auto;
-    height: 450px;
     border: 1px solid #FF0F00;
+    padding: 40px;
 }
 
 .mywork-section {
-    /* width: 80%; */
+
     margin: 0 auto;
-    height: 900px;
+    padding: 40px;
     border: 1px solid #FF0F00;
 }
 
 .reach-me-section {
-    /* width: 80%; */
+
     margin: 0 auto;
-    height: 400px;
+    padding: 40px;
     border: 1px solid #FF0F00;
 }
 
+/* ----------------banner-section---------------------- */
+
 .banner {
-    display: flex;
-    justify-content: center;
-    font-size: 26px;
+    text-align: center;
 }
 
 .banner-title {
-    position: relative;
-    margin-left: 90px;
     color: var(--text);
-    text-align: center;
-    margin-top: 170px;
+    margin: 150px;
+    /* margin: 50px auto; */
+    font-size: 40px;
+
 }
 
 .special-letter {
@@ -116,6 +119,10 @@ nav ul li a {
     text-shadow: #e7e7e7;
 }
 
+
+/* ----------------myself section---------------------- */
+
+
 .sub-title {
     color: var(--text);
     font-size: 20px;
@@ -123,78 +130,85 @@ nav ul li a {
     width: 150px;
 }
 
-figure.myself {
+figure {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     box-sizing: border-box;
     padding: 40px;
+
 }
 
-.myself-image {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    height: 200px;
-    width: 200px;
+img {
+    position: relative;
+    height: 250px;
+    width: 250px;
     border-radius: 10px;
-    margin-left: 25px;
+    margin-left: 0px;
+}
+
+myself-text {
+    font-size: 15px;
+
 
 }
 
 p {
-    font-size: 12px;
     color: var(--text);
+    text-align: justify;
+    padding: 40px;
     line-height: 2.0;
-    width: 80%;
-    margin-left: 100px;
+
+
 }
 
-.mywork-figure {
+/* ----------------mywork section----------------------- */
+.mywork-flexrow {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    padding-top: 40px;
+
 }
 
-.mywork-figure1 {
+.mywork-website {
 
     height: 300px;
     width: 400px;
     border-radius: 5px;
-    margin: 25px;
+    margin-left: 25px;
+    margin-top: 30px;
 }
 
-form {
+/* ----------------reachme section---------------------- */
 
+form {
     margin: 0 auto;
-    width: 600px;
-    padding: 30px;
+    max-width: 700px;
+    padding: 20px;
     border-radius: 20px;
-    background-color: #ffbc42;
+    background: linear-gradient(286.37deg, #FFBC42 49.97%, rgba(255, 66, 213, 0) 177.41%);
 }
 
 form ul {
     text-decoration: none;
-
     display: flex;
     flex-direction: column;
-    justify-content: center;
     border-radius: 10px;
 
 }
 
-label {
+form ul label {
     display: inline-block;
     width: 100px;
+
 }
 
 input,
 textarea {
     box-sizing: border-box;
-    width: 400px;
+    width: 350px;
     height: 35px;
     border: 1px solid var(--text);
     border-radius: 5px;
@@ -204,7 +218,7 @@ textarea {
     vertical-align: top;
     height: 60px;
 }
- 
+
 button {
 
     height: 40px;
@@ -213,12 +227,36 @@ button {
     color: var(--text);
     border-radius: 5px;
     margin: 10px;
-  }
-.formbutton
-{
-    text-align: center;
-  }
-  
-footer{
+}
 
+
+/* ----------------reachme section---------------------- */
+.formbutton {
+    text-align: center;
+}
+
+footer {
+    border: 1px solid var(--highlight);
+    background-color: #219ebc;
+}
+
+.footertext {
+    color: var(--text);
+    text-align: center;
+}
+
+@media only screen and (max-width: 1277px) {
+    figure {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    form {
+        margin: 0 auto;
+        max-width: 500px;
+        padding: 20px;
+        border-radius: 20px;
+    }
+}
 }

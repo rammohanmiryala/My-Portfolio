@@ -13,11 +13,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
     <!-- google fonts logo -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header>
-        <div class="logo">
+        <div id="logo">
             <h1>RAM</h1>
             <!-- <img src="./assets/logo.png" alt="placeholder"> -->
         </div>
@@ -34,7 +37,6 @@
     <main>
         <section class="banner-section">
             <div class="banner">
-
                 <h1 class="banner-title">Hi, I’m Ram. I am<br>
                     <span class="special-letter">F</span>Full Stack Web Developer....<sapn class="special-letter">!>
                 </h1></span>
@@ -44,21 +46,20 @@
             <div class="sub-title">
                 <h2>MySelf</h2>
             </div>
-            <figure class="myself">
-                <img src="./assets/image.jpg" alt="placeholder" class="myself-image">
+            <figure>
+                <img src="./assets/image.jpg" alt="placeholder">
                 <div calss="myself-text">
                     <p>
                         Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                         Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
                         when an unknown printer took a galley of type and scrambled it to make a type
                         specimen book. It has survived not only five centuries, but also the leap into.
-                    </p>
-                    <p>
                         Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                         Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
                         when an unknown printer took a galley of type and scrambled it to make a type
-                        specimen book.
+                        specimen book. It has survived not only five centuries, but also the leap into.
                     </p>
+                    
                 </div>
             </figure>
         </section>
@@ -66,14 +67,13 @@
             <div class="sub-title">
                 <h2>MyWork</h2>
             </div>
-            <div>
-                <figure class="mywork-figure">
-                    <img src="./assets/placeholder.jpg" alt="placeholder" class="mywork-figure1">
-                    <img src="./assets/placeholder.jpg" alt="placeholder" class="mywork-figure1">
-                    <img src="./assets/placeholder.jpg" alt="placeholder" class="mywork-figure1">
-                    <img src="./assets/placeholder.jpg" alt="placeholder" class="mywork-figure1">
-                </figure>
-            </div>
+            <figure class="mywork-flexrow">
+                <img src="./assets/placeholder.jpg" alt="placeholder" class="mywork-website">
+                <img src="./assets/placeholder.jpg" alt="placeholder" class="mywork-website">
+                <img src="./assets/placeholder.jpg" alt="placeholder" class="mywork-website">
+                <img src="./assets/placeholder.jpg" alt="placeholder" class="mywork-website">
+            </figure>
+
         </section>
         <section class="reach-me-section">
             <div class="sub-title">
@@ -84,32 +84,27 @@
                     <ul>
                         <li>
                             <label for="FullName">Full Name :</label>
-                            <input type="text" id="fname" name="fname">
+                            <input type="text" id="fname" name="fname"placeholder="Your fullname..">
                         </li>
                         <li>
                             <label for="Email">Email :</label>
-                            <input type="text" id="lname" name="lname">
+                            <input type="email" id="Email" name="Email"placeholder="Your Email..">
                         </li>
                         <li>
-                            <label for="Contactno">Contact no :</label>
-                            <input type="text" id="lname" name="lname">
+                            <label for="ContactNo">Contact No :</label>
+                            <input type="number" id="lname" name="lname"placeholder="Enter your number..">
                         </li>
                         <div class="formbutton">
                             <button type="submit">SEND</button>
                         </div>
                     </ul>
-
-                    
                 </form>
             </div>
         </section>
     </main>
     <footer>
-        © 2021 My New Website Productions
-
+        <p class="footertext">© 2021 2wings Productions</p>
     </footer>
-
-
 
 </body>
 
