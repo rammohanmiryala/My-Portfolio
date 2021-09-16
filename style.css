@@ -72,7 +72,7 @@ nav ul li a {
     
     
 }
-li:hover {
+nav ul li:hover {
     background-color: #FFF8E5;
     border-radius: 10px;
     transition-duration: 1s;   
@@ -84,30 +84,13 @@ li:hover {
 
 /* ----------------sections start---------------------- */
 
-.banner-section {
+section {
     margin: 0 auto;
     padding: 40px;
     
 }
 
-.myself-section {
-    margin: 0 auto;
-    padding: 40px;
-}
 
-.mywork-section {
-
-    margin: 0 auto;
-    padding: 40px;
-    
-}
-
-.reach-me-section {
-
-    margin: 0 auto;
-    padding: 40px;
-    
-}
 
 /* ----------------banner-section---------------------- */
 
@@ -247,22 +230,22 @@ button {
     border-radius: 5px;
     margin: 10px;
 }
-
-
-/* ----------------footer---------------------- */
 .formbutton {
     text-align: center;
 }
 
+/* ----------------footer---------------------- */
+
+
 footer {
-    border: 1px solid var(--highlight);
-    background-color: #e63946;
+    background-color: #ffbc42;
     margin-top: 30px;
+    padding: 10px;
 
 }
 
 .footertext {
-    color: var(--text);
+    color: var(--black);
     text-align: center;
 }
 /* --------end of body------------------ */
