@@ -3,7 +3,7 @@
     --black: #0B132B;
     --text: #C6C6C6;
     --yellow: #ffbc42;
-    --highlight: #FF0F00;
+    --highlight: #e63946;
 }
 
 body {
@@ -58,6 +58,8 @@ li {
     list-style: none;
     padding: 15px 20px;
     display: inline;
+    border-radius: 10px;
+    text-align: center;
 
 }
 
@@ -67,7 +69,18 @@ nav ul li a {
     font-size: 20px;
     font-weight: bold;
     cursor: pointer;
+    
+    
 }
+li:hover {
+    background-color: #FFF8E5;
+    border-radius: 10px;
+    transition-duration: 1s;   
+}
+/* li:hover a {
+    color: var(--text);
+    
+}    */
 
 /* ----------------sections start---------------------- */
 
@@ -179,8 +192,13 @@ img {
     border-radius: 5px;
     margin-left: 40px;
     margin-top: 50px;
+    transition: transform .2s;
 }
-
+.mywork-websiteimg:hover{
+    
+    transform: scale(1.1);
+    
+} 
 /* ----------------reachme section---------------------- */
 
 form {
@@ -231,7 +249,7 @@ button {
 }
 
 
-/* ----------------reachme section---------------------- */
+/* ----------------footer---------------------- */
 .formbutton {
     text-align: center;
 }
@@ -247,7 +265,7 @@ footer {
     color: var(--text);
     text-align: center;
 }
-
+/* --------end of body------------------ */
 /*------- media queries responsive------------ */
 @media only screen and (max-width: 903px)  {
 
@@ -261,8 +279,8 @@ footer {
     }
 
     main {
-        width: 100%;
-        margin: 0 auto
+        width: 95%;
+        margin: 0 auto;
     }
 
     /*------- headder media querys------------ */
@@ -270,7 +288,8 @@ footer {
     header {
         flex-direction: column;
         justify-content: center;
-        width: 100%;
+        width: 95%;
+        margin: 0 auto;
     }
 
     #logo {
@@ -324,8 +343,8 @@ footer {
     }
 
     img {
-        height: 100px;
-        width: 100px;
+        height: 150px;
+        width: 150px;
         border-radius: 10px;
         margin-left: 0px;
     }
@@ -339,10 +358,10 @@ footer {
 
     /*------- mywork media querys------------ */
 
-    .mywork-website {
+    .mywork-websiteimg {
 
-        height: 100px;
-        width: 200px;
+        height: 200px;
+        width: 300px;
         border-radius: 5px;
         margin-left: 15px;
         margin-top: 10px;
@@ -459,6 +478,7 @@ footer {
         margin-left: 0px;
     }
 
+
     #myself-text p {
         text-align: justify;
         padding: 10px;
@@ -468,7 +488,7 @@ footer {
 
     /*------- mywork media querys------------ */
 
-    .mywork-website {
+    .mywork-websiteimg {
 
         height: 200px;
         width: 300px;
