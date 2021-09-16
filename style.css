@@ -11,18 +11,19 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
-main {
-    width: 80%;
-    margin: 0 auto;
-}
+
 
 header {
     display: flex;
-    flex-direction: row;
     align-items: center;
     width: 80%;
     margin: 10px auto;
 
+}
+
+main {
+    width: 80%;
+    margin: 0 auto;
 }
 
 /* navigation bar  */
@@ -36,21 +37,21 @@ header {
 .navbar {
     width: 60%;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
 }
 
 nav {
     background-color: #ffbc42;
-    margin: 0 auto;
     display: flex;
-    flex-direction: row;
     justify-content: center;
     border-radius: 10px;
-}
-
-nav ul {
-    text-decoration: none;
 
 }
+nav ul{
+    list-style: none;
+}
+
 
 li {
     text-decoration: none;
@@ -106,7 +107,6 @@ nav ul li a {
 .banner-title {
     color: var(--text);
     margin: 150px;
-    /* margin: 50px auto; */
     font-size: 40px;
 
 }
@@ -148,17 +148,14 @@ img {
     margin-left: 0px;
 }
 
-myself-text {
-    font-size: 15px;
+#myself-text {}
 
-
-}
-
-p {
+#myself-text p {
     color: var(--text);
     text-align: justify;
     padding: 40px;
     line-height: 2.0;
+    font-size: 16px;
 
 
 }
@@ -187,15 +184,16 @@ form {
     margin: 0 auto;
     max-width: 700px;
     padding: 20px;
-    border-radius: 20px;
-    background: linear-gradient(286.37deg, #FFBC42 49.97%, rgba(255, 66, 213, 0) 177.41%);
+    border-radius: 10px;
+    background: linear-gradient(286.37deg, #FFBC42 49.97%, #FF42D5 177.41%);
 }
 
 form ul {
     text-decoration: none;
     display: flex;
     flex-direction: column;
-    border-radius: 10px;
+    border-radius: 10px; 
+
 
 }
 
@@ -237,7 +235,9 @@ button {
 
 footer {
     border: 1px solid var(--highlight);
-    background-color: #219ebc;
+    background-color: #e63946;
+    margin-top: 30px;
+
 }
 
 .footertext {
@@ -245,18 +245,255 @@ footer {
     text-align: center;
 }
 
-@media only screen and (max-width: 1277px) {
+/*------- media queries responsive------------ */
+@media only screen and (max-width: 897px) {
+
+    /* secions media querys */
+    .banner-section,
+    .myself-section,
+    .mywork-section,
+    .reach-me-section {
+
+        padding: 2px;
+    }
+
+    main {
+        width: 100%;
+        margin: 0 auto
+    }
+
+    /*------- headder media querys------------ */
+
+    header {
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+    }
+
+    #logo {
+        font-size: 15px;
+    }
+
+    .navbar {
+        width: 100%;
+        margin: 5px auto;
+        flex-direction: column;
+    }
+
+    li {
+        text-decoration: none;
+        list-style: none;
+        display: block;
+
+    }
+
+    nav ul li a {
+
+        font-size: 15px;
+        padding: 5px;
+        padding: 4px 2px;
+
+    }
+
+    /*------- banner media querys------------ */
+    .banner-title {
+        color: var(--text);
+        margin: 010px;
+        font-size: 20px;
+
+    }
+
+    .sub-title {
+        transform: rotate(0deg);
+        margin: 0 auto;
+        font-size: 15px;
+        text-align: center;
+
+    }
+
+    /*------- myself media querys------------ */
     figure {
         display: flex;
         flex-direction: column;
         justify-content: center;
+        padding: 5px;
+
     }
 
+    img {
+        height: 100px;
+        width: 100px;
+        border-radius: 10px;
+        margin-left: 0px;
+    }
+
+    #myself-text p {
+        text-align: justify;
+        padding: 10px;
+        line-height: 2;
+        font-size: 10px;
+    }
+
+    /*------- mywork media querys------------ */
+
+    .mywork-website {
+
+        height: 100px;
+        width: 200px;
+        border-radius: 5px;
+        margin-left: 15px;
+        margin-top: 10px;
+    }
+
+    /*------- reach me media querys------------ */
+
     form {
-        margin: 0 auto;
-        max-width: 500px;
-        padding: 20px;
-        border-radius: 20px;
+
+        padding: 10px;
+        border-radius: 10px;
+
+    }
+
+    input,
+    textarea {
+        box-sizing: border-box;
+        max-width: 250px;
+        height: 35px;
+        border: 1px solid var(--text);
+        border-radius: 5px;
+    }
+
+    textarea {
+        vertical-align: top;
+        height: 60px;
     }
 }
+
+/*------- media queries responsive------------ */
+@media only screen and (max-width: 1024px) {
+
+    /* secions media querys */
+    .banner-section,
+    .myself-section,
+    .mywork-section,
+    .reach-me-section {
+
+        padding: 10px;
+    }
+
+    main {
+        width: 90%;
+        margin: 0 auto
+    }
+
+    /*------- headder media querys------------ */
+
+    header {
+        flex-direction: row;
+        /* justify-content: center; */
+        width: 90%;
+    }
+
+    #logo {
+        font-size: 15px;
+    }
+
+    .navbar {
+        width: 100%;
+        margin: 5px auto;
+        flex-direction: row;
+        justify-content: center;
+    }
+    nav {
+        width: 60%;  
+    }
+
+    li {
+        text-decoration: none;
+        list-style: none;
+        display: inline;
+
+    }
+
+    nav ul li a {
+
+        font-size: 15px;
+        padding: 5px;
+        padding: 4px 2px;
+
+    }
+
+    /*------- banner media querys------------ */
+    .banner-title {
+        color: var(--text);
+        margin: 100px;
+        font-size: 20px;
+
+    }
+
+    .sub-title {
+        transform: rotate(0deg);
+        margin: 0 auto;
+        font-size: 15px;
+        text-align: center;
+
+    }
+
+    /*------- myself media querys------------ */
+    figure {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 5px;
+
+    }
+
+    img {
+        height: 100px;
+        width: 100px;
+        border-radius: 10px;
+        margin-left: 0px;
+    }
+
+    #myself-text p {
+        text-align: justify;
+        padding: 10px;
+        line-height: 2;
+        font-size: 10px;
+    }
+
+    /*------- mywork media querys------------ */
+
+    .mywork-website {
+
+        height: 100px;
+        width: 200px;
+        border-radius: 5px;
+        margin-left: 15px;
+        margin-top: 10px;
+    }
+
+    /*------- reach me media querys------------ */
+
+    form {
+
+        padding: 10px;
+        border-radius: 10px;
+
+    }
+
+    input,
+    textarea {
+        box-sizing: border-box;
+        max-width: 250px;
+        height: 35px;
+        border: 1px solid var(--text);
+        border-radius: 5px;
+    }
+
+    textarea {
+        vertical-align: top;
+        height: 60px;
+    }
 }
+
