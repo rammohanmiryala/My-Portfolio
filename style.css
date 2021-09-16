@@ -31,7 +31,7 @@ main {
     font-size: 25px;
     color: var(--text);
     font-family: 'Kaushan Script', cursive;
-    border-bottom: 1px solid
+    border-bottom: 3px solid var(--highlight)
 }
 
 .navbar {
@@ -74,13 +74,11 @@ nav ul li a {
 .banner-section {
     margin: 0 auto;
     padding: 40px;
-    border: 1px solid #FF0F00;
-
+    
 }
 
 .myself-section {
     margin: 0 auto;
-    border: 1px solid #FF0F00;
     padding: 40px;
 }
 
@@ -88,14 +86,14 @@ nav ul li a {
 
     margin: 0 auto;
     padding: 40px;
-    border: 1px solid #FF0F00;
+    
 }
 
 .reach-me-section {
 
     margin: 0 auto;
     padding: 40px;
-    border: 1px solid #FF0F00;
+    
 }
 
 /* ----------------banner-section---------------------- */
@@ -106,7 +104,7 @@ nav ul li a {
 
 .banner-title {
     color: var(--text);
-    margin: 150px;
+    margin: 120px;
     font-size: 40px;
 
 }
@@ -126,8 +124,14 @@ nav ul li a {
 .sub-title {
     color: var(--text);
     font-size: 20px;
-    transform: rotate(-15deg);
     width: 150px;
+    border-bottom: 3px solid var(--text);
+    
+    
+}
+
+.sub-title  h2{
+    
 }
 
 figure {
@@ -145,10 +149,9 @@ img {
     height: 250px;
     width: 250px;
     border-radius: 10px;
-    margin-left: 0px;
+    
 }
 
-#myself-text {}
 
 #myself-text p {
     color: var(--text);
@@ -169,13 +172,13 @@ img {
 
 }
 
-.mywork-website {
+.mywork-websiteimg {
 
     height: 300px;
     width: 400px;
     border-radius: 5px;
-    margin-left: 25px;
-    margin-top: 30px;
+    margin-left: 40px;
+    margin-top: 50px;
 }
 
 /* ----------------reachme section---------------------- */
@@ -246,7 +249,7 @@ footer {
 }
 
 /*------- media queries responsive------------ */
-@media only screen and (max-width: 897px) {
+@media only screen and (max-width: 903px)  {
 
     /* secions media querys */
     .banner-section,
@@ -368,9 +371,9 @@ footer {
         height: 60px;
     }
 }
-
+/* --------------------------------------------------------------------------------------- */
 /*------- media queries responsive------------ */
-@media only screen and (max-width: 1024px) {
+@media only screen and (min-width: 903px) and (max-width: 1240px) {
 
     /* secions media querys */
     .banner-section,
@@ -382,7 +385,7 @@ footer {
     }
 
     main {
-        width: 90%;
+        width: 80%;
         margin: 0 auto
     }
 
@@ -390,8 +393,7 @@ footer {
 
     header {
         flex-direction: row;
-        /* justify-content: center; */
-        width: 90%;
+        width: 80%;
     }
 
     #logo {
@@ -425,21 +427,23 @@ footer {
 
     /*------- banner media querys------------ */
     .banner-title {
-        color: var(--text);
-        margin: 100px;
-        font-size: 20px;
+        /* margin-bottom: 100px; */
+        font-size: 25px;
+        
+
 
     }
 
+   
+    /*------- myself media querys------------ */
     .sub-title {
         transform: rotate(0deg);
         margin: 0 auto;
-        font-size: 15px;
+        font-size: 20px;
         text-align: center;
+        
 
     }
-
-    /*------- myself media querys------------ */
     figure {
         display: flex;
         flex-direction: column;
@@ -449,8 +453,8 @@ footer {
     }
 
     img {
-        height: 100px;
-        width: 100px;
+        height: 200px;
+        width: 200px;
         border-radius: 10px;
         margin-left: 0px;
     }
@@ -459,15 +463,15 @@ footer {
         text-align: justify;
         padding: 10px;
         line-height: 2;
-        font-size: 10px;
+        font-size: 15px;
     }
 
     /*------- mywork media querys------------ */
 
     .mywork-website {
 
-        height: 100px;
-        width: 200px;
+        height: 200px;
+        width: 300px;
         border-radius: 5px;
         margin-left: 15px;
         margin-top: 10px;
@@ -485,7 +489,7 @@ footer {
     input,
     textarea {
         box-sizing: border-box;
-        max-width: 250px;
+        width: 350px;
         height: 35px;
         border: 1px solid var(--text);
         border-radius: 5px;
