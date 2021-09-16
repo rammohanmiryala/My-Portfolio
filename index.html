@@ -19,22 +19,24 @@
 </head>
 
 <body>
+    <!-- header -->
     <header>
         <div id="logo">
             <h1>RAM</h1>
-            <!-- <img src="./assets/logo.png" alt="placeholder"> -->
         </div>
+        <!-- navbar -->
         <div class="navbar">
             <nav>
                 <ul>
-                    <li><a href="#myself">Myself</a></li>
-                    <li><a href="#mywork">My work</a></li>
-                    <li><a href="#reachme">Reach me</a></li>
+                    <li><a href="#myselfnav">Myself</a></li>
+                    <li><a href="#myworknav">My work</a></li>
+                    <li><a href="#reachmenav">Reach me</a></li>
                 </ul>
             </nav>
         </div>
     </header>
     <main>
+        <!-- banner -->
         <section class="banner-section">
             <div class="banner">
                 <h1 class="banner-title">Hi, I’m Ram. I am<br>
@@ -42,66 +44,74 @@
                 </h1></span>
             </div>
         </section>
+        <!-- myself -->
         <section class="myself-section">
-            <div class="sub-title">
-                <h2>MySelf</h2>
-            </div>
-            <figure>
-                <img src="./assets/image.jpg" alt="placeholder">
-                <div id="myself-text">
-                    <p>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                        when an unknown printer took a galley of type and scrambled it to make a type
-                        specimen book. It has survived not only five centuries, but also the leap into.
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                        when an unknown printer took a galley of type and scrambled it to make a type
-                        specimen book. It has survived not only five centuries, but also the leap into.
-                    </p>
-                    
+            <div id="myselfnav">
+                <div class="sub-title">
+                    <h2>MySelf</h2>
                 </div>
-            </figure>
-        </section>
-        <section class="mywork-section">
-            <div class="sub-title">
-                <h2>MyWork</h2>
-            </div>
-            <figure class="mywork-flexrow">
-                <img src="./assets/placeholder.jpg" alt="placeholder" class="mywork-websiteimg">
-                <img src="./assets/placeholder.jpg" alt="placeholder" class="mywork-websiteimg">
-                <img src="./assets/placeholder.jpg" alt="placeholder" class="mywork-websiteimg">
-                <img src="./assets/placeholder.jpg" alt="placeholder" class="mywork-websiteimg">
-            </figure>
+                <figure>
+                    <img src="./assets/image.jpg" alt="placeholder">
+                    <div id="myself-text">
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                            when an unknown printer took a galley of type and scrambled it to make a type
+                            specimen book. It has survived not only five centuries, but also the leap into.
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                            when an unknown printer took a galley of type and scrambled it to make a type
+                            specimen book. It has survived not only five centuries, but also the leap into.
+                        </p>
 
-        </section>
-        <section class="reach-me-section">
-            <div class="sub-title">
-                <h2>Reach me</h2>
+                    </div>
+                </figure>
             </div>
-            <!-- <div class="contact-form"> -->
+        </section>
+        <!-- mywork -->
+        <section class="mywork-section">
+            <div id="myworknav">
+                <div class="sub-title">
+                    <h2>MyWork</h2>
+                </div>
+                <figure class="mywork-flexrow">
+                    <img src="./assets/placeholder.jpg" alt="placeholder" class="mywork-websiteimg">
+                    <img src="./assets/placeholder.jpg" alt="placeholder" class="mywork-websiteimg">
+                    <img src="./assets/placeholder.jpg" alt="placeholder" class="mywork-websiteimg">
+                    <img src="./assets/placeholder.jpg" alt="placeholder" class="mywork-websiteimg">
+                </figure>
+            </div>
+        </section>
+        <!-- reach me -->
+        <section class="reach-me-section">
+            <div id="#reachmenav">
+                <div class="sub-title">
+                    <h2>Reach me</h2>
+                </div>
+                <!-- <div class="contact-form"> -->
                 <form>
                     <ul>
                         <li>
                             <label for="FullName">Full Name :</label>
-                            <input type="text" id="fname" name="fname"placeholder="Your fullname..">
+                            <input type="text" id="fname" name="fname" placeholder="Your fullname..">
                         </li>
                         <li>
                             <label for="Email">Email :</label>
-                            <input type="email" id="Email" name="Email"placeholder="Your Email..">
+                            <input type="email" id="Email" name="Email" placeholder="Your Email..">
                         </li>
                         <li>
                             <label for="ContactNo">Contact No :</label>
-                            <input type="number" id="lname" name="lname"placeholder="Enter your number..">
+                            <input type="number" id="lname" name="lname" placeholder="Enter your number..">
                         </li>
                         <div class="formbutton">
                             <button type="submit">SEND</button>
                         </div>
                     </ul>
                 </form>
-            <!-- </div> -->
+            </div>
         </section>
     </main>
+    <!-- footer -->
     <footer>
         <p class="footertext">© 2021 2wings Productions</p>
     </footer>
